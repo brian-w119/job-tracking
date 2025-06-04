@@ -6,7 +6,7 @@
   #outline {
     display: block;
     border: 1px solid black;
-    background-color: rgb(118, 130, 139);
+    background-color: grey;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -57,7 +57,7 @@
   }
 
   hr {
-    border: 2px solid black;
+    border: 2px solid red;
   }
 
   #search-all {
@@ -74,83 +74,177 @@
   #last-edit {
     margin-left: 1vw;
   }
+
+  #name-input,
+  #job-id {
+    background-color: aqua;
+    display: flex;
+    justify-self: center;
+    max-width: 80%;
+    overflow-x: scroll;
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+  }
+  #sign-out {
+    position: absolute;
+    right: 4vw;
+    color: red;
+    top: 7.5vh;
+  }
+
+  #sign-in-form {
+    height: 20vh !important;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+  }
+
+  #credentials {
+    display: block;
+  }
+
+  #user-name {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .log-in {
+    min-width: 70%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #enter-credentials {
+    height: 5vh;
+    width: 8vw;
+  }
 }
 
-img {
-  width: 3vw;
-  height: auto;
-  display: flex;
-  justify-self: center;
-  margin-bottom: 15vh;
-}
-
-#outline {
-  border: 2px solid black;
-  width: 30vw;
+#enter-credentials {
+  background-color: green;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(88, 88, 141);
-  margin-top: 26vh;
+  margin-top: 5vh;
+  color: white;
 }
 
-#search-all {
+#sign-in-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+  border: 1px solid black;
+  height: 30vh;
+  width: 40vw;
+  background-color: rgb(202, 198, 198);
 }
 
-#incomplete-tasks {
-  margin-right: 1vw;
+#sign-out:hover {
+  color: green;
 }
 
-#last-edit {
-  margin-left: 1vw;
-}
+@media only screen and (min-width: 768px) {
+  img {
+    width: 3vw;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 15vh;
+  }
 
-h3 {
-  text-align: center;
-}
+  #sign-out {
+    position: absolute;
+    color: red;
+    top: 5.8vh;
+    right: 8vw !important;
+  }
 
-label {
-  margin-left: 1vw;
-}
+  #outline {
+    border: 2px solid black;
+    max-width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(94, 110, 167);
+    margin-top: 26vh;
+  }
 
-#or {
-  text-align: center;
-}
+  #search-all {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
 
-input {
-  background-color: rgb(167, 162, 162);
-}
+  #incomplete-tasks {
+    margin-right: 1vw;
+  }
 
-#name-input {
-  width: 65%;
-}
+  #last-edit {
+    margin-left: 1vw;
+  }
 
-#job-id {
-  width: 85%;
-}
+  h3 {
+    text-align: center;
+  }
 
-.enter-clear {
-  display: flex;
-  justify-content: center;
-}
+  label {
+    margin-left: 1vw;
+  }
 
-.enter-clear > #enter {
-  margin-right: 1vw;
-}
+  #or {
+    text-align: center;
+  }
 
-.enter-clear > #clear {
-  margin-left: 1vw;
-}
+  input {
+    background-color: rgb(192, 173, 173);
+  }
 
-button:hover {
-  background-color: green;
-}
+  #name-input,
+  #job-id {
+    max-width: 90%;
+    min-width: 90%;
+    display: flex;
+    justify-self: center;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-#sign-out {
-  position: absolute;
-  right: 2vw;
+  input::placeholder {
+    text-align: center;
+    font-style: italic;
+    color: white;
+  }
+
+  .enter-clear {
+    display: flex;
+    justify-content: center;
+  }
+
+  .enter-clear > #enter {
+    margin-right: 1vw;
+  }
+
+  .enter-clear > #clear {
+    margin-left: 1vw;
+  }
+
+  button:hover {
+    background-color: green;
+  }
+
+  #sign-out {
+    position: absolute;
+    right: 2vw;
+  }
+
+  #logo {
+    margin-top: 5vh;
+  }
 }
